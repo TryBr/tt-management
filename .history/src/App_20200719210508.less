@@ -1,0 +1,226 @@
+@import '~antd/dist/antd.css';
+
+.sidebar {
+  background: #F3F5F6;
+  padding-top: 16px;
+  height: 100vh;
+
+  .logo {
+      padding-left: 8px;
+      margin-bottom: 30px;
+      display: block;
+  }
+
+  .user {
+      overflow: hidden;
+      clear: both;
+      padding-left: 16px;
+    .icon {
+        margin-right: 11px;
+        float: left;
+    }
+
+    .email {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #272F5A; 
+    }
+  }
+
+  .company-name {
+    padding-left: 28px;
+    }
+
+    .logout {
+        margin-top: 16px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #272F5A;
+        padding-left: 28px;
+    }
+
+
+  .sidebar-menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+
+    .menu-item {
+        clear: both;
+        margin-bottom: 25px;
+        position: relative;
+        padding-left: 16px;
+        &.active {
+            &:after {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 32px;
+                left: 0px;
+                top: -8px;
+                background: #189EE9;
+                border-radius: 0px 6px 6px 0px;
+            }
+
+            .item__link {
+                color: #189EE9;
+            }
+        }
+
+        &:hover {
+            &:after {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 32px;
+                left: 0px;
+                top: -8px;
+                background: #189EE9;
+                border-radius: 0px 6px 6px 0px;
+            }
+
+            .item__link {
+                color: #189EE9;
+            }
+        }
+        .item__icon {
+            padding-right: 8px;
+            float: left;
+        }
+        .item__link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            align-items: center;
+            color: #272F5A;
+            display: block;
+            overflow: hidden;
+            .item__name {
+                float: left;
+            }
+        }
+    }
+  }
+}
+
+.content {
+  background: #ffffff;
+  padding-left: 64px;
+  padding-right: 56px;
+
+  .page-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    color: #272F5A;
+  }
+
+  .progress-wrapper {
+        overflow: hidden;
+        clear: both;
+      .progress-time {
+          clear: both;
+          .time-icon {
+            float: left;
+            margin-top: 0px;
+            margin-right: 8px;
+          }
+          .time-title {
+            margin-top: -2px;
+            float: left;
+          }
+      }
+
+      .progress-bar-wrapper {
+          .progress-bar {
+            float: left;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: rgba(39, 47, 90, 0.6);
+            width: 84%;
+          }
+
+          .progress-info {
+                width: 14%;
+                margin-left: 2%;
+                margin-top: -2%;
+                float: left;
+
+              .info-title {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                color: rgba(39, 47, 90, 0.6);
+              }
+
+              .info-time {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                color: rgba(39, 47, 90, 0.8);
+              }
+          }
+      }
+  }
+
+  .executor-wrapper {
+    margin-top: 24px;
+    width: 100%;
+    height: 104px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(78, 93, 146, 0.08), 0px 4px 4px rgba(78, 93, 146, 0.16);
+    padding: 16px;
+    .executor-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(39, 47, 90, 0.6);
+        margin-bottom: 8px;
+    }
+
+    .ant-select-selector {
+        border: 1px solid #DCDEE4;
+        border-radius: 4px;
+        height: 48px;
+        .ant-select-selection-item {
+            line-height: 48px;
+            padding-left: 13px;
+        }
+    }
+
+    .executor-btn {
+        width: 165px;
+        height: 48px;
+        background: #189EE9;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 48px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+  }
+}
+
+.site-page-header {
+    padding-left: 0px;
+    .ant-page-header-heading-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #272F5A;
+    }
+}

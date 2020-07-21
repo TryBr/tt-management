@@ -1,0 +1,15 @@
+@import '~antd/dist/antd.css';
+
+.sidebar {
+  background: #F3F5F6;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.content {
+  background: #ffffff;
+}

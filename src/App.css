@@ -1,38 +1,372 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+.sidebar {
+  background: #F3F5F6;
+  padding-top: 16px;
+  height: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar .logo {
+  padding-left: 8px;
+  margin-bottom: 30px;
+  display: block;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar .user {
+  overflow: hidden;
+  clear: both;
+  padding-left: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.sidebar .user .icon {
+  margin-right: 11px;
+  float: left;
+}
+.sidebar .user .email {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272F5A;
+}
+.sidebar .company-name {
+  padding-left: 28px;
+}
+.sidebar .logout {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #272F5A;
+  padding-left: 28px;
+}
+.sidebar .sidebar-menu {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 30px;
+}
+.sidebar .sidebar-menu .menu-item {
+  clear: both;
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 16px;
+}
+.sidebar .sidebar-menu .menu-item .active {
+  color: #189EE9;
+}
+.sidebar .sidebar-menu .menu-item .active:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  left: 0px;
+  top: -8px;
+  background: #189EE9;
+  border-radius: 0px 6px 6px 0px;
+}
+.sidebar .sidebar-menu .menu-item .active .item__icon {
+  display: none;
+}
+.sidebar .sidebar-menu .menu-item .active .item__icon.active {
+  display: block;
+}
+.sidebar .sidebar-menu .menu-item:hover a {
+  color: #189EE9;
+}
+.sidebar .sidebar-menu .menu-item:hover .item__icon {
+  display: none;
+}
+.sidebar .sidebar-menu .menu-item:hover .item__icon.active {
+  display: block;
+}
+.sidebar .sidebar-menu .menu-item .item__icon {
+  padding-right: 8px;
+  float: left;
+}
+.sidebar .sidebar-menu .menu-item .item__icon.active {
+  display: none;
+}
+.sidebar .sidebar-menu .menu-item .item__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #272F5A;
+  display: block;
+  overflow: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+.sidebar .sidebar-menu .menu-item .item__link .item__name {
+  float: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar .sidebar-menu .menu-item a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  color: #272F5A;
+  display: block;
+  overflow: hidden;
+}
+.sidebar .sidebar-menu .menu-item a .item__name {
+  float: left;
+}
+.content {
+  background: #ffffff;
+  margin-left: 64px;
+  margin-right: 56px;
+  margin-top: 16px;
+  width: 1080px;
+  position: relative;
+  min-height: 800px;
+}
+.content .page-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 48px;
+  color: #272F5A;
+}
+.content .button-add {
+  line-height: 55px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.content .button-edit {
+  line-height: 48px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 56px;
+  right: 0px;
+}
+.content .progress-wrapper {
+  overflow: hidden;
+  clear: both;
+}
+.content .progress-wrapper .progress-time {
+  clear: both;
+}
+.content .progress-wrapper .progress-time .time-icon {
+  float: left;
+  margin-top: 0px;
+  margin-right: 8px;
+}
+.content .progress-wrapper .progress-time .time-title {
+  margin-top: -2px;
+  float: left;
+}
+.content .progress-wrapper .progress-bar-wrapper .progress-bar {
+  float: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(39, 47, 90, 0.6);
+  width: 84%;
+}
+.content .progress-wrapper .progress-bar-wrapper .progress-info {
+  width: 14%;
+  margin-left: 2%;
+  margin-top: -2%;
+  float: left;
+}
+.content .progress-wrapper .progress-bar-wrapper .progress-info .info-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(39, 47, 90, 0.6);
+}
+.content .progress-wrapper .progress-bar-wrapper .progress-info .info-time {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(39, 47, 90, 0.8);
+}
+.content .executor-wrapper {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 104px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(78, 93, 146, 0.08), 0px 4px 4px rgba(78, 93, 146, 0.16);
+  padding: 16px;
+}
+.content .executor-wrapper .executor-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(39, 47, 90, 0.6);
+  margin-bottom: 8px;
+}
+.content .executor-wrapper .ant-select {
+  float: left;
+}
+.content .executor-wrapper .executor-btn {
+  float: left;
+  margin-left: 16px;
+}
+.content .executor-wrapper .ant-select-selector {
+  border: 1px solid #DCDEE4;
+  border-radius: 4px;
+  height: 48px;
+}
+.content .executor-wrapper .ant-select-selector .ant-select-selection-item {
+  line-height: 48px;
+  padding-left: 13px;
+}
+.content .executor-wrapper .executor-btn {
+  width: 165px;
+  height: 48px;
+  background: #189EE9;
+  border-radius: 4px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+}
+.content .steps .steps-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #272F5A;
+  margin-bottom: 16px;
+}
+.content .steps .ant-steps-item-wait .ant-steps-item-icon {
+  background: #F3F5F6;
+  border: none;
+}
+.content .comments {
+  padding-right: 32px;
+}
+.content .comments .comments-title {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #272F5A;
+}
+.content .comments .ant-btn {
+  background: rgba(39, 47, 90, 0.32);
+  border-radius: 4px;
+  border: none;
+}
+.content .detail-information {
+  margin-top: 52px;
+}
+.content .detail-information .title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #272F5A;
+  margin-bottom: 24px;
+}
+.content .search-panel .select-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(39, 47, 90, 0.8);
+  float: left;
+  margin-right: 8px;
+  margin-top: 5px;
+  margin-left: 12px;
+}
+.content .search-panel .select-filter {
+  width: 228px;
+}
+.content .owners-table {
+  margin-top: 32px;
+}
+.content .owners-table .fio-cell {
+  font-weight: bold;
+  color: #272F5A;
+}
+.content .owners-table .fio-cell a {
+  font-weight: bold;
+  color: #272F5A;
+}
+.content .owners-table .menu-cell .ant-btn {
+  float: right;
+}
+.site-page-header {
+  padding-left: 0px;
+}
+.site-page-header .ant-page-header-heading-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272F5A;
+}
+.ant-layout {
+  background: #ffffff;
+}
+.owner-detail .owner-information {
+  padding-right: 48px;
+}
+.owner-detail .owner-information .title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #272F5A;
+  margin-bottom: 32px;
+  margin-top: 24px;
+}
+.owner-detail .owner-info-table {
+  width: 100%;
+}
+.owner-detail .owner-info-table tr {
+  border-bottom: 1px solid #DCDEE4;
+}
+.owner-detail .owner-info-table tr td {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(39, 47, 90, 0.6);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.owner-detail .owner-tasks .title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #272F5A;
+  margin-bottom: 32px;
+  margin-top: 24px;
+}
+.owner-detail .owner-tasks .task .task-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272F5A;
+  margin-bottom: 8px;
+}
+.owner-detail .owner-tasks .task .task-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(39, 47, 90, 0.45);
+  margin-bottom: 8px;
+}
+.owner-detail .owner-tasks .task .task-time .time-icon {
+  float: left;
+  margin-top: 0px;
+  margin-right: 8px;
+}
+.owner-detail .owner-tasks .task .task-time .time-title {
+  margin-top: -2px;
+  float: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(39, 47, 90, 0.6);
+}
+.owner-detail .ant-btn-primary {
+  margin-right: 24px;
 }
