@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tt-management/static/css/main.e77932f8.chunk.css",
+    "main.js": "/tt-management/static/js/main.33c0d5d4.chunk.js",
+    "main.js.map": "/tt-management/static/js/main.33c0d5d4.chunk.js.map",
+    "runtime-main.js": "/tt-management/static/js/runtime-main.ff851afd.js",
+    "runtime-main.js.map": "/tt-management/static/js/runtime-main.ff851afd.js.map",
+    "static/css/2.4c4477be.chunk.css": "/tt-management/static/css/2.4c4477be.chunk.css",
+    "static/js/2.4515fce5.chunk.js": "/tt-management/static/js/2.4515fce5.chunk.js",
+    "static/js/2.4515fce5.chunk.js.map": "/tt-management/static/js/2.4515fce5.chunk.js.map",
+    "index.html": "/tt-management/index.html",
+    "precache-manifest.ee64a6ef714d6713aeb604b43e942f91.js": "/tt-management/precache-manifest.ee64a6ef714d6713aeb604b43e942f91.js",
+    "service-worker.js": "/tt-management/service-worker.js",
+    "static/css/2.4c4477be.chunk.css.map": "/tt-management/static/css/2.4c4477be.chunk.css.map",
+    "static/css/main.e77932f8.chunk.css.map": "/tt-management/static/css/main.e77932f8.chunk.css.map",
+    "static/js/2.4515fce5.chunk.js.LICENSE.txt": "/tt-management/static/js/2.4515fce5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff851afd.js",
+    "static/css/2.4c4477be.chunk.css",
+    "static/js/2.4515fce5.chunk.js",
+    "static/css/main.e77932f8.chunk.css",
+    "static/js/main.33c0d5d4.chunk.js"
+  ]
+}
